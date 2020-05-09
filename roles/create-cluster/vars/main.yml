@@ -1,0 +1,6 @@
+---
+# vars file for create-cluster
+default_url_weavenet: "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+helm_url: "https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3"
+helm_repos:
+    stable: "https://kubernetes-charts.storage.googleapis.com"
